@@ -13,3 +13,5 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= venderファイルにおいたファイルを読み込み
+//= require map_helper/map_helper
