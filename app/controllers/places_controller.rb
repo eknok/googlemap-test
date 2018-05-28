@@ -5,6 +5,10 @@ class PlacesController < ApplicationController
   # GET /places.json
   def index
     @places = Place.all
+    respond_to do |f|
+      f.html
+      f.json { render json: @places }
+    end
   end
 
   # GET /places/1

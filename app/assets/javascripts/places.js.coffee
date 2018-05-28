@@ -15,7 +15,6 @@ ready = ->
     triggerMap()
 
 window.triggerMap = ->
-
   # --- show --- #
   mapCanvas = $('.map-show-canvas')
   if mapCanvas.length && mapCanvas.attr('data-latitude')
@@ -32,7 +31,8 @@ window.triggerMap = ->
         #draggable: ,
       }
     )
-
+    
+window.triggerMap = ->
   # --- new/edit --- #
   if $('.map-search-button').length
 
